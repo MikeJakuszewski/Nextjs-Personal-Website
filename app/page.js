@@ -4,6 +4,8 @@ import profilePic from "./assets/developer.png";
 import Layout from "./components/Layout";
 import AnimatedText from "./components/AnimatedText";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { BiLinkExternal } from "react-icons/bi";
 
 const quote = {
   initial: {
@@ -35,13 +37,28 @@ export default function Home() {
           <div className="w-1/2 flex flex-col  text-left gap-4">
             <AnimatedText
               text="Turning Vision Into Reality With Code And Design."
-              className="text-7.5xl  text-left"
+              className="text-7xl  text-left"
             />
-            <motion.p variants={quote} initial="initial" animate="animate">
+            <p className="my-4 text-base font-medium">
               As a skilled full-stack developer, I am dedicated to turning ideas
               into innovative web applications. Explore my latest projects and
               articles, showcasing my expertise in React.js and web development.
-            </motion.p>
+            </p>
+            <div className="flex items-center mt-2">
+              <Link
+                href="/resume.pdf"
+                target="_blank"
+                className="flex items-center justify-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark "
+              >
+                Resume <BiLinkExternal className="w-6 ml-1" />
+              </Link>
+              <Link
+                href="mailto:michael_jakuszewski@hotmail.com"
+                className="ml-4 text-lg font-medium capitalize text-dark underline underline-offset-2"
+              >
+                Contact
+              </Link>
+            </div>
           </div>
         </div>
       </Layout>

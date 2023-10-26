@@ -13,6 +13,20 @@ const quote = {
   },
 };
 
+const singleWord = {
+  initial: {
+    opacity: 0,
+    y: 50,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
 const AnimatedText = ({ text, className = "" }) => {
   return (
     <div
@@ -25,7 +39,17 @@ const AnimatedText = ({ text, className = "" }) => {
         className={` inline-block w-full text-dark font-bold capitalize text-8xl ${className}`}
       >
         {text.split(" ").map((word, i) => {
-          return <span key={`${word}-${i}`}>{word} </span>;
+          return (
+            <motion.span
+              key={`${word}-${i}`}
+              variants={singleWord}
+              initial="initial"
+              animate="animate"
+              className="inline-block"
+            >
+              {word}&nbsp;
+            </motion.span>
+          );
         })}
       </motion.h1>
     </div>
