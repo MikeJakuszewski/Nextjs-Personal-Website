@@ -6,7 +6,8 @@ import AnimatedText from "./components/AnimatedText";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BiLinkExternal } from "react-icons/bi";
-
+import HireMe from "./components/HireMe";
+import lightBulb from "../public/images/svgs/miscellaneous_icons_1.svg";
 const quote = {
   initial: {
     opacity: 0,
@@ -62,6 +63,15 @@ export default function Home() {
           </div>
         </div>
       </Layout>
+
+      <HireMe />
+      <div className="absolute right-8 bottom-8 inline-block w-24">
+        <Image
+          src={lightBulb}
+          alt="MikeJakuszewski"
+          className="w-full h-auto "
+        />
+      </div>
     </main>
   );
 }
