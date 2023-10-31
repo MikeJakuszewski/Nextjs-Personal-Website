@@ -67,7 +67,7 @@ const page = () => {
                 demonstrate my technical prowess and creativity. Each project
                 showcases my attention to detail and commitment to excellence.
               </p>
-              <h2 className="my-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
+              {/* <h2 className="my-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 Tech Stack
               </h2>
               <p className="font-medium text-lg">
@@ -80,7 +80,7 @@ const page = () => {
                 Additionally, I have experience with essential tools like Git,
                 package managers, and RESTful APIs, enabling seamless
                 integration and deployment of applications.
-              </p>
+              </p> */}
             </div>
             <div className="col-span-3 relative  h-max rounded-2xl border-2 border-solid border-dark bg-light p-8  dark:border-light dark:bg-dark">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />

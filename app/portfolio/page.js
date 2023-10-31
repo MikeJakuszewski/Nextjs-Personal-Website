@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import AnimatedText from "../components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import project1 from "../../public/images/crypto-screener-cover-image.jpg";
 
 import { FaGithub } from "react-icons/fa6";
 
