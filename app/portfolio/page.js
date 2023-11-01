@@ -4,7 +4,10 @@ import Layout from "../components/Layout";
 import AnimatedText from "../components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
-import project1 from "../../public/images/crypto-screener-cover-image.jpg";
+// import project1 from "../../public/images/crypto-screener-cover-image.jpg";
+import project1 from "../assets/AirBnBClone.png";
+import project2 from "../assets/TechNexusHome.png";
+import project3 from "../assets/CocktailQueryHome.png";
 import { motion } from "framer-motion";
 
 import { FaGithub } from "react-icons/fa6";
@@ -75,7 +78,7 @@ const Project = ({ title, type, img, link, githubLink }) => {
         <FramerImage
           src={img}
           alt={title}
-          className="w-full h-auto"
+          className="w-full max-h-[32rem]"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
         />
@@ -138,21 +141,21 @@ const page = () => {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Featured Project"
-                title="Airbnb clone"
-                img={project1}
-                link="https://travelapp-taupe.vercel.app/"
-                githubLink="https://github.com/MikeJakuszewski/Next-Travel-Booking-App"
+                type="E-com Website"
+                title="E-commerce Tech Store"
+                img={project2}
+                link="https://mern-ecom-m5ef.onrender.com/"
+                githubLink="https://github.com/MikeJakuszewski/Mern-Stack-Ecomm"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
-                type="Featured Project"
-                title="Airbnb clone"
-                img={project1}
-                link="https://travelapp-taupe.vercel.app/"
-                githubLink="https://github.com/MikeJakuszewski/Next-Travel-Booking-App"
+                type="SPA - Website"
+                title="CocktailQuery"
+                img={project3}
+                link="https://cocktailquery.netlify.app/"
+                githubLink="https://github.com/MikeJakuszewski/CocktailQuery"
               />
             </div>
           </div>

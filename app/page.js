@@ -3,11 +3,10 @@ import Image from "next/image";
 import profilePic from "./assets/developer.png";
 import Layout from "./components/Layout";
 import AnimatedText from "./components/AnimatedText";
-import { motion } from "framer-motion";
 import Link from "next/link";
 import { BiLinkExternal } from "react-icons/bi";
 import HireMe from "./components/HireMe";
-import lightBulb from "../public/images/svgs/miscellaneous_icons_1.svg";
+import lightBulb from "./assets/lightbulb.svg";
 import TransitionEffect from "./components/TransitionEffect";
 const quote = {
   initial: {
