@@ -35,7 +35,6 @@ export default function Home() {
                 height={800}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                 className=" scale-x-[-1] w-full h-auto  lg:hidden md:inline-block md:w-full "
-                priority
               />
             </div>
             <div className="w-1/2 flex flex-col  text-left gap-4 lg:w-full lg:text-center">
