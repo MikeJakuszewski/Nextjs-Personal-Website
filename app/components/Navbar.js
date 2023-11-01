@@ -101,6 +101,7 @@ const Navbar = () => {
             href="https://twitter.com/mikejakuszewski"
             target="_blank"
             whileHover={{ y: -2 }}
+            aria-label="Twitter link"
           >
             <FaTwitter size={30} className=" text-cyan-400" name="twitter" />
           </motion.a>
@@ -108,6 +109,7 @@ const Navbar = () => {
             href="https://github.com/MikeJakuszewski"
             target="_blank"
             whileHover={{ y: -2 }}
+            aria-label="GitHub link"
           >
             <FaGithub size={30} className=" dark:fill-white" name="github" />
           </motion.a>
@@ -115,6 +117,7 @@ const Navbar = () => {
             href="https://www.linkedin.com/in/mikejakuszewski/"
             target="_blank"
             whileHover={{ y: -2 }}
+            aria-label="LinkedIn link"
           >
             <FaLinkedin
               size={30}
@@ -127,7 +130,7 @@ const Navbar = () => {
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
               className=" flex item-center rounded-full p-1"
               type="button"
-              name="darkModeToggle"
+              aria-label="Dark Mode Toggle"
             >
               {mode === "dark" ? (
                 <FaSun size={30} className="fill-white" />
