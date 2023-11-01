@@ -7,6 +7,7 @@ import profilePicture from "../assets/Personal.jpeg";
 import { useEffect, useRef } from "react";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import { Skills } from "../components/Skills";
+import TransitionEffect from "../components/TransitionEffect";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -38,6 +39,7 @@ const page = () => {
         <title>Mike Jakuszewski | About Page</title>
         <meta name="description" content="About page" />
       </Head>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText

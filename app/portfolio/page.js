@@ -8,6 +8,7 @@ import project1 from "../../public/images/crypto-screener-cover-image.jpg";
 import { motion } from "framer-motion";
 
 import { FaGithub } from "react-icons/fa6";
+import TransitionEffect from "../components/TransitionEffect";
 const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, githubLink }) => {
@@ -117,6 +118,7 @@ const page = () => {
         <title>Mike Jakuszewski | Portfolio</title>
         <meta name="description" content="Portfolio page" />
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout className="pt-16 ">
           <AnimatedText
