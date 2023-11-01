@@ -31,14 +31,15 @@ export default function Home() {
               alt="developer"
               width={800}
               height={800}
-              sizes="100vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               className=" scale-x-[-1] "
+              priority
             />
           </div>
           <div className="w-1/2 flex flex-col  text-left gap-4">
             <AnimatedText
               text="Turning Vision Into Reality With Code And Design."
-              className="text-7xl  text-left dark:text-light"
+              className="  text-xl  text-left dark:text-light xl:text-6xl 2xl:text-8xl"
             />
             <p className="my-4 text-base font-medium">
               As a skilled full-stack developer, I am dedicated to turning ideas
