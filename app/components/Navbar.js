@@ -169,7 +169,7 @@ const Navbar = () => {
               target="_blank"
               whileHover={{ y: -2 }}
             >
-              <FaGithub size={30} className=" dark:fill-white" />
+              <FaGithub size={30} className=" dark:fill-black fill-light" />
             </motion.a>
             <motion.a
               href="https://www.linkedin.com/in/mikejakuszewski/"
@@ -178,7 +178,7 @@ const Navbar = () => {
             >
               <FaLinkedin
                 size={30}
-                className="text-[#2D64BC] dark:bg-white rounded-lg "
+                className="text-[#2D64BC] bg-light rounded-lg "
               />
             </motion.a>
             <motion.div whileHover={{ y: -2 }}>
